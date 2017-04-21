@@ -1,0 +1,11 @@
+﻿<Application x:Class="Wpf.Frno.SearchAndExtract.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Wpf.Frno.SearchAndExtract"
+             xmlns:converters="clr-namespace:Wpf.Frno.SearchAndExtract.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <converters:DebugConverter x:Key="DebugConverter" ></converters:DebugConverter>
+        <converters:StringToListConverter x:Key="StringToListConverter" ></converters:StringToListConverter>
+    </Application.Resources>
+</Application>

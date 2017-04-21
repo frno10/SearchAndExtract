@@ -1,0 +1,80 @@
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.csprojResolveAssemblyReference.cache
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\MainWindow.g.cs
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\App.g.cs
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract_MarkupCompile.cache
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract_MarkupCompile.lref
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\Wpf.Frno.SearchAndExtract.exe.config
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\Wpf.Frno.SearchAndExtract.exe
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\Wpf.Frno.SearchAndExtract.pdb
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\Ookii.Dialogs.Wpf.dll
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\Ookii.Dialogs.Wpf.xml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\MainWindow.baml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.g.resources
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.Properties.Resources.resources
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.csproj.GenerateResource.Cache
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.exe
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.pdb
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\App.baml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\SimpleListViewWindow.g.cs
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\SimpleListViewWindow.baml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Styles\DataGridStyle.baml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\DataGridExtensions.dll
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\Microsoft.Expression.Interactions.dll
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\System.Windows.Interactivity.dll
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\DataGridExtensions.xml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\Microsoft.Expression.Interactions.xml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\bin\Debug\System.Windows.Interactivity.xml
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\GroupingDetailsWindow.g.cs
+c:\users\michal\documents\visual studio 2015\Projects\UWP.Frno.SearchAndExtract\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\GroupingDetailsWindow.baml
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\MainWindow.g.cs
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\GroupingDetailsWindow.g.cs
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\SimpleTextViewWindow.g.cs
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\SimpleListViewWindow.g.cs
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\App.g.cs
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract_MarkupCompile.cache
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract_MarkupCompile.lref
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Wpf.Frno.SearchAndExtract.exe.config
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Wpf.Frno.SearchAndExtract.exe
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Wpf.Frno.SearchAndExtract.pdb
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Castle.Core.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Ninject.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Ninject.Extensions.Factory.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\System.Windows.Interactivity.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Castle.Core.xml
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Ninject.xml
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\Ninject.Extensions.Factory.xml
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\System.Windows.Interactivity.xml
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\App.baml
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\MainWindow.baml
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\GroupingDetailsWindow.baml
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\SimpleTextViewWindow.baml
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Screens\SimpleListViewWindow.baml
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Styles\DataGridStyle.baml
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.g.resources
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.Properties.Resources.resources
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.csproj.GenerateResource.Cache
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.exe
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.pdb
+D:\Projects\Wpf.Frno.SearchAndExtract\obj\Debug\Wpf.Frno.SearchAndExtract.csprojResolveAssemblyReference.cache

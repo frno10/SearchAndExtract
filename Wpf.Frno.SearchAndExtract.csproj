@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6FA0929-EC71-4DB2-B178-10C1BE514B9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wpf.Frno.SearchAndExtract</RootNamespace>
+    <AssemblyName>Wpf.Frno.SearchAndExtract</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>packages\Castle.Core.3.2.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DataGridExtensions, Version=1.0.33.0, Culture=neutral, PublicKeyToken=43de855f87de903a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataGridExtensions.1.0.33.0\lib\net40-Client\DataGridExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Factory, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>packages\Ninject.Extensions.Factory.3.2.1.0\lib\net45-full\Ninject.Extensions.Factory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ookii.Dialogs.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0c15020868fd6249, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ookii.Dialogs.1.0\lib\net35\Ookii.Dialogs.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Converters\StringToListConverter.cs" />
+    <Compile Include="Data\FileDataLayoutLinked.cs" />
+    <Compile Include="Data\FileDataLinked.cs" />
+    <Compile Include="Data\FileInfoAndSearchDepth.cs" />
+    <Compile Include="Data\RegexMatchedRecord.cs" />
+    <Compile Include="Data\XamlTag.cs" />
+    <Compile Include="Data\XmlFileData.cs" />
+    <Compile Include="Data\GenericEnumerator.cs" />
+    <Compile Include="Data\MatrixColumn.cs" />
+    <Compile Include="ExportTools\DataGridToCsv.cs" />
+    <Compile Include="ExportTools\ListViewToCSV.cs" />
+    <Compile Include="Export\ExportFileDialog.cs" />
+    <Compile Include="Export\IResultsExporter.cs" />
+    <Compile Include="Export\IExportFileDialog.cs" />
+    <Compile Include="Export\TxtResultsExporter.cs" />
+    <Compile Include="Data\DataMatrix.cs" />
+    <Compile Include="Data\FileData.cs" />
+    <Compile Include="Data\IFileData.cs" />
+    <Compile Include="Extensions\ListViewExtensions.cs" />
+    <Compile Include="Extensions\MemoryComboBox.cs" />
+    <Compile Include="IO\ISettings.cs" />
+    <Compile Include="IO\Settings.cs" />
+    <Compile Include="IO\XmlSettings.cs" />
+    <Compile Include="Screens\SimpleTextViewWindow.xaml.cs">
+      <DependentUpon>SimpleTextViewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search\RegexSimpleSearch.cs" />
+    <Compile Include="Search\Interfaces\FileSearchInfo.cs" />
+    <Compile Include="Search\Interfaces\ISearchInfo.cs" />
+    <Compile Include="Search\LayoutsFilesSearch.cs" />
+    <Compile Include="Search\ReferencedFilesSearch.cs" />
+    <Compile Include="Search\FileAndFolderCombinationEnum.cs" />
+    <Compile Include="Search\LinkedFilesSearch.cs" />
+    <Compile Include="Search\FilesSimpleSearchUsingSingleOperation.cs" />
+    <Compile Include="Search\Interfaces\ISearchType.cs" />
+    <Compile Include="Search\SearchInfo.cs" />
+    <Compile Include="Search\XmlFilesSimpleSearch.cs" />
+    <Compile Include="Search\FilesSimpleSearch.cs" />
+    <Compile Include="Search\Interfaces\IFileSearch.cs" />
+    <Compile Include="Data\IObservableCollection.cs" />
+    <Compile Include="Menu\IMenuItem.cs" />
+    <Compile Include="Menu\IMenuOperation.cs" />
+    <Compile Include="Screens\GroupingDetailsWindow.xaml.cs">
+      <DependentUpon>GroupingDetailsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SimpleListViewWindow.xaml.cs">
+      <DependentUpon>SimpleListViewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FileSearchAndExtract\XmlDocumentExtractor.cs" />
+    <Compile Include="Utilities\FileAndFolderBrowsers.cs" />
+    <Compile Include="Utilities\MemoryHelper.cs" />
+    <Compile Include="Utilities\NotifyPropertyChanged.cs" />
+    <Compile Include="Utilities\ReflectionHelper.cs" />
+    <Compile Include="Utilities\ScreenHelper.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Converters\DebugConverter.cs" />
+    <Compile Include="Search\FilesBatchWalkthrough.cs" />
+    <Compile Include="FileSearchAndExtract\FilesLightweightWalkthrough.cs" />
+    <Compile Include="FileSearchAndExtract\FilesWalkthrough.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Screens\GroupingDetailsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\SimpleTextViewWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\SimpleListViewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\DataGridStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\ObservableCollectionBag2.cs" />
+    <Compile Include="Data\ObservableCollectionBag.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

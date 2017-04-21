@@ -1,0 +1,102 @@
+﻿<Window x:Class="Wpf.Frno.SearchAndExtract.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf.Frno.SearchAndExtract"
+        xmlns:dgx="urn:tom-englert.de/DataGridExtensions"
+        xmlns:extensions="clr-namespace:Wpf.Frno.SearchAndExtract.Extensions"
+        DataContext="{}"
+        mc:Ignorable="d"
+        Title="Search and Extract" Height="768" Width="1024">
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36"></RowDefinition>
+            <RowDefinition Height="36"></RowDefinition>
+            <RowDefinition Height="36"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="36"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal" Margin="5 0">
+            <Label x:Name="textBlock" Content="Folder to search" VerticalAlignment="Center"/>
+            <!--<TextBox x:Name="textBoxFolderToSearch" Text="{Binding OriginalPath, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Width="404" Margin="0 5" VerticalContentAlignment="Center"/>-->
+            <extensions:MemoryComboBox x:Name="ComboBoxFolderToSearch" DataFile="mcb.data" SaveSettings="OnAddItem" Text="{Binding OriginalPath, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Width="404" Margin="0 5" VerticalContentAlignment="Center"/>
+            <Button x:Name="buttonPickItems" Content="..." Click="buttonPickItems_Click" Width="30" Margin="5"/>
+            <Button x:Name="buttonSearch" Content="Search" Click="buttonSearch_Click" Margin="0 5" Padding="5 0"/>
+            <Label x:Name="labelStatus" Content="{Binding Status}"  Margin="5 0" VerticalAlignment="Center"></Label>
+            <Label Margin="5 0" VerticalAlignment="Center">Results</Label>
+            <Label x:Name="labelResultsCount" Content="{Binding ResultsCount}" Margin="5 0" VerticalAlignment="Center"></Label>
+            <Label x:Name="labelTime" Content="{Binding ElapsedTime}" Margin="5 0" VerticalAlignment="Center"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5 0" Grid.Row="1">
+            <Label VerticalAlignment="Center" Margin="0">File search pattern</Label>
+            <extensions:MemoryComboBox x:Name="ComboBoxFilePattern" Text="{Binding FileSearchPattern, Converter={StaticResource StringToListConverter}, FallbackValue=*}" Margin="5" Width="100" VerticalContentAlignment="Center"/>
+            <Label VerticalAlignment="Center">Subfolder search depth</Label>
+            <extensions:MemoryComboBox x:Name="ComboBoxSubfolderLevel" Margin="5 0" Width="100" Height="26" Text="10" VerticalContentAlignment="Center"/>
+            <Label VerticalAlignment="Center">Search string:</Label>
+            <extensions:MemoryComboBox x:Name="ComboBoxSearchString" Margin="5 0" Width="100" Height="26" VerticalContentAlignment="Center" Text="{Binding ContentSearchPattern, Converter={StaticResource StringToListConverter}, FallbackValue=*}" />
+            <Label VerticalAlignment="Center">Search type:</Label>
+            <ComboBox 
+                x:Name="comboBoxSearchTypeSelection" 
+                MinWidth="200" 
+                Margin="0 5" 
+                ItemsSource="{Binding SearchTypes}"
+                SelectionChanged="comboBoxSearchTypeSelection_SelectionChanged"
+                SelectedIndex="0">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                            <TextBlock Text="{Binding Name}" Margin="0 2"></TextBlock>
+                            <TextBlock Text="{Binding Description}" FontSize="9.333" ></TextBlock>
+                            <Line HorizontalAlignment="Stretch" Fill="Gray"></Line>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5 0" Grid.Row="2">
+            <Label VerticalAlignment="Center">Results:</Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right">
+
+            <Button x:Name="buttonViewList" Content="List results" Click="buttonViewList_Click" Margin="5" Padding="5 0"/>
+            <Button x:Name="buttonGetAspInfo" Content="ASP info" Click="buttonGetAspInfo_Click" Margin="5" Padding="5 0"/>
+            <Button x:Name="buttonGroupBySelectedColumn" Content="Group by selected column" Click="buttonViewGroupingsTags_Click" Margin="5" Padding="5 0"/>
+            <Button x:Name="buttonExtractTags" Content="Extract tags" Click="buttonExtractTags_Click" Margin="0 5" Padding="5 0"/>
+            <Button x:Name="buttonExportGrid" Content="Export grid results" HorizontalAlignment="Right" Margin="5" Padding="5 0" Click="buttonExportGrid_Click"/>
+            <Button x:Name="buttonShowLinkedFiles" Content="Show linked files" HorizontalAlignment="Right" Margin="5" Padding="5 0" Click="buttonShowLinkedFiles_Click"/>
+            <Button x:Name="buttonShowLinkedFromFiles" Content="Show files that link this" HorizontalAlignment="Right" Margin="5" Padding="5 0" Click="buttonShowLinkedFromFiles_Click"/>
+        </StackPanel>
+        <DataGrid 
+            x:Name="listViewResults" 
+            Grid.Row="3" 
+            DataContext="{Binding FileSearch}"
+            ItemsSource="{Binding Files}" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Margin="5 0 5 5" 
+            GridLinesVisibility="None"
+            IsReadOnly="True"
+            dgx:DataGridFilter.IsAutoFilterEnabled="True">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Height="36" VerticalAlignment="Bottom">
+            <Label>Results:</Label>
+            <Label x:Name="labelTotalResultItemsCount" Content="{Binding Content, ElementName=labelResultsCount}"></Label>
+            <Label>Selected:</Label>
+            <Label x:Name="labelCurrentlySelectedItemsCount" Content="{Binding SelectedItems.Count, ElementName=listViewResults}"></Label>
+            <Label>Filtered #:</Label>
+            <Label x:Name="labelFilteredItemsCount" Content="{Binding Items.Count, ElementName=listViewResults}"></Label>
+        </StackPanel>
+        <TextBlock Text="{Binding ErrorMessage}" Grid.Row="4" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Center"></TextBlock>
+    </Grid>
+</Window>
